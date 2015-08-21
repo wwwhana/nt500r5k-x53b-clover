@@ -6,11 +6,29 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		34DF475D1B86B4000078A1A5 /* AUDIO */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AUDIO; sourceTree = "<group>"; };
+		34DF475E1B86B4000078A1A5 /* EFI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = EFI; sourceTree = "<group>"; };
+		34DF475F1B86B4000078A1A5 /* nt500r5k-x53b-clover.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "nt500r5k-x53b-clover.xcodeproj"; sourceTree = "<group>"; };
+		34DF47621B86B4000078A1A5 /* Pre-Edited DSDT.dsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Pre-Edited DSDT.dsl"; sourceTree = "<group>"; };
+		34DF47631B86B4000078A1A5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		34DF47561B86B3EB0078A1A5 = {
 			isa = PBXGroup;
 			children = (
+				34DF475D1B86B4000078A1A5 /* AUDIO */,
+				34DF475E1B86B4000078A1A5 /* EFI */,
+				34DF475F1B86B4000078A1A5 /* nt500r5k-x53b-clover.xcodeproj */,
+				34DF47621B86B4000078A1A5 /* Pre-Edited DSDT.dsl */,
+				34DF47631B86B4000078A1A5 /* README.md */,
 			);
+			sourceTree = "<group>";
+		};
+		34DF47601B86B4000078A1A5 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -30,6 +48,12 @@
 			);
 			mainGroup = 34DF47561B86B3EB0078A1A5;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 34DF47601B86B4000078A1A5 /* Products */;
+					ProjectRef = 34DF475F1B86B4000078A1A5 /* nt500r5k-x53b-clover.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 			);
