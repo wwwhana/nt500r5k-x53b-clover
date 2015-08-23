@@ -1,2 +1,21 @@
-01271d01   01271c40  01271d00  01271ea6 01471d01   01471c10  01471d00  01471e17 01771d00   01771c50  01771d00  01771e00 01871d10   01871c30  01871d10  01871ea1 01d71dba   01d71c60  01d71db0  01d71ee6 02171d10   02171c20  02171d10  02171e21  
-
+dict>
+<key>AFGLowPowerState</key>
+<data>
+AwAAAA==
+</data>
+<key>Codec</key>
+<string>ALC282</string>
+<key>CodecID</key>
+<integer>283902594</integer>
+<key>ConfigData</key>
+<data>
+AScdAQEnHEABJx0AAScepgFHHQEBRxwQAUcd
+AAFHHhcBdx0AAXccUAF3HQABdx4AAYcdEAGH
+HDABhx0QAYceoQHXHboB1xxgAdcdsAHXHuYC
+Fx0QAhccIAIXHRACFx4h
+</data>
+<key>FuncGroup</key>
+<integer>1</integer>
+<key>LayoutID</key>
+<integer>3</integer>
+</dict>

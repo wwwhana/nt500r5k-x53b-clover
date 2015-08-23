@@ -2,70 +2,69 @@
  * Intel ACPI Component Architecture
  * AML Disassembler version 20100331
  *
- * Disassembly of iASL1TrjVv.aml, Thu Aug 20 08:29:32 2015
+ * Disassembly of iASLBhyNkq.aml, Sun Aug 23 09:12:24 2015
  *
  *
  * Original Table Header:
  *     Signature        "DSDT"
- *     Length           0x0000D390 (54160)
+ *     Length           0x0000D198 (53656)
  *     Revision         0x02
- *     Checksum         0x9C
- *     OEM ID           "Apple "
+ *     Checksum         0x82
+ *     OEM ID           "SECCSD"
  *     OEM Table ID     "LH43STAR"
  *     OEM Revision     0x01072009 (17244169)
  *     Compiler ID      "INTL"
  *     Compiler Version 0x20100331 (537920305)
  */
-DefinitionBlock ("iASL1TrjVv.aml", "DSDT", 2, "Apple ", "LH43STAR", 0x01072009)
+DefinitionBlock ("iASLBhyNkq.aml", "DSDT", 2, "SECCSD", "LH43STAR", 0x01072009)
 {
-    External (GSMI, FieldUnitObj)
-    External (BRTL, FieldUnitObj)
-    External (SGMD, FieldUnitObj)
-    External (PDC7, IntObj)
-    External (PDC6, IntObj)
-    External (PDC5, IntObj)
-    External (PDC4, IntObj)
-    External (PDC3, IntObj)
-    External (PDC2, IntObj)
-    External (PDC1, IntObj)
-    External (PDC0, IntObj)
-    External (IGDS, FieldUnitObj)
-    External (LIDS, FieldUnitObj)
+    External (PDC7)
+    External (PDC6)
+    External (PDC5)
+    External (PDC4)
+    External (PDC3)
+    External (PDC2)
+    External (PDC1)
+    External (PDC0)
+    External (GSMI)
+    External (BRTL)
+    External (SGMD)
+    External (IGDS, IntObj)
+    External (LIDS, MethodObj)    // 0 Arguments
     External (MDBG, IntObj)
     External (PS2X)
     External (PS3X)
     External (PS0X)
-    External (DIDX, FieldUnitObj)
-    External (M64B, FieldUnitObj)
-    External (M64L, FieldUnitObj)
+    External (DIDX)
+    External (M64B, IntObj)
+    External (M64L, IntObj)
     External (\_PR_.NPSS)
     External (\_PR_.PSTE)
-    External (\_PR_.DSAE, FieldUnitObj)
-    External (\_PR_.DTSE, FieldUnitObj)
-    External (\_PR_.BGIA, FieldUnitObj)
-    External (\_PR_.BGMS, FieldUnitObj)
-    External (\_PR_.BGMA, FieldUnitObj)
-    External (\_PR_.TRPF, FieldUnitObj)
-    External (\_PR_.TRPD, FieldUnitObj)
-    External (\_PR_.DTSF, FieldUnitObj)
     External (\_SB_.PCCD)
-    External (\_SB_.GFX0.PDRD, MethodObj)    // 0 Arguments
-    External (\_SB_.GFX0.GLID, MethodObj)    // 1 Arguments
-    External (\_PR_.CPU0._PSS, PkgObj)
+    External (\_PR_.DSAE)
+    External (\_PR_.DTSE)
+    External (\_PR_.BGIA, IntObj)
+    External (\_PR_.BGMS, IntObj)
+    External (\_PR_.BGMA, IntObj)
+    External (\_PR_.TRPF)
+    External (\_PR_.TRPD)
+    External (\_PR_.DTSF, IntObj)
+    External (\_PR_.CPU0._PSS)
     External (\_SB_.PCCD.PENB)
-    External (\_PR_.CPU0._PPC, IntObj)
+    External (\_PR_.CPU0._PPC)
     External (\_SB_.PCI0.EPON, MethodObj)    // 0 Arguments
     External (\_SB_.TPM_.PTS_, MethodObj)    // 1 Arguments
+    External (\_SB_.PCI0.GFX0.PDRD)
     External (\_SB_.PCI0.RP05.PEGP)
     External (\_SB_.PCI0.GFX0.GLID, MethodObj)    // 1 Arguments
     External (\_SB_.PCI0.GFX0.GSCI, MethodObj)    // 0 Arguments
-    External (\_SB_.PCI0.GFX0.GSSE, FieldUnitObj)
+    External (\_SB_.PCI0.GFX0.GSSE)
     External (\_SB_.PCI0.PEG2.HPME, MethodObj)    // 0 Arguments
     External (\_SB_.PCI0.PEG1.HPME, MethodObj)    // 0 Arguments
     External (\_SB_.PCI0.PEG0.HPME, MethodObj)    // 0 Arguments
-    External (\_SB_.PCI0.GFX0.CLID, FieldUnitObj)
-    External (\_SB_.PCI0.B0D3.BARA, IntObj)
-    External (\_SB_.PCI0.B0D3.ABAR, FieldUnitObj)
+    External (\_SB_.PCI0.GFX0.CLID)
+    External (\_SB_.PCI0.B0D3.BARA)
+    External (\_SB_.PCI0.B0D3.ABAR, IntObj)
     External (\_SB_.PCI0.SDHC.PS0X)
     External (\_SB_.PCI0.I2C1.PS0X)
     External (\_SB_.PCI0.I2C0.PS3X)
@@ -79,7 +78,6 @@ DefinitionBlock ("iASL1TrjVv.aml", "DSDT", 2, "Apple ", "LH43STAR", 0x01072009)
     External (\_SB_.PCI0.XHC_.RHUB.PS3X)
     External (\_SB_.PCI0.XHC_.RHUB.PS2X)
     External (\_SB_.PCI0.XHC_.RHUB.PS0X)
-    External (\_SB_.PCI0.RP05.PEGP.RP05.PEGP._OFF, MethodObj)    // 0 Arguments
 
     Name (PEBS, 0xF8000000)
     Name (PELN, 0x04000000)
@@ -5071,11 +5069,6 @@ DefinitionBlock ("iASL1TrjVv.aml", "DSDT", 2, "Apple ", "LH43STAR", 0x01072009)
 
     Method (_WAK, 1, NotSerialized)
     {
-        If (LOr (LLess (Arg0, One), LGreater (Arg0, 0x05)))
-        {
-            Store (0x03, Arg0)
-        }
-
         If (LOr (LLess (Arg0, One), LGreater (Arg0, 0x05)))
         {
             Store (0x03, Arg0)
@@ -10986,17 +10979,17 @@ DefinitionBlock ("iASL1TrjVv.aml", "DSDT", 2, "Apple ", "LH43STAR", 0x01072009)
                 Store (One, Local0)
             }
 
-            If (LNotEqual (Local0, LIDS))
+            If (LNotEqual (Local0, LIDS ()))
             {
                 Store (Local0, LIDS)
                 If (IGDS)
                 {
-                    If (LEqual (LIDS, Zero))
+                    If (LEqual (LIDS (), Zero))
                     {
                         Store (0x80000000, \_SB.PCI0.GFX0.CLID)
                     }
 
-                    If (LEqual (LIDS, One))
+                    If (LEqual (LIDS (), One))
                     {
                         Store (0x80000003, \_SB.PCI0.GFX0.CLID)
                     }
@@ -11033,106 +11026,6 @@ DefinitionBlock ("iASL1TrjVv.aml", "DSDT", 2, "Apple ", "LH43STAR", 0x01072009)
 
     Method (PNOT, 0, Serialized)
     {
-        If (CondRefOf (\_SB.PCCD.PENB))
-        {
-            Notify (\_SB.PCCD, 0x82)
-        }
-        Else
-        {
-            If (LGreater (TCNT, One))
-            {
-                If (And (PDC0, 0x08))
-                {
-                    Notify (\_PR.CPU0, 0x80)
-                }
-
-                If (And (PDC1, 0x08))
-                {
-                    Notify (\_PR.CPU1, 0x80)
-                }
-
-                If (And (PDC2, 0x08))
-                {
-                    Notify (\_PR.CPU2, 0x80)
-                }
-
-                If (And (PDC3, 0x08))
-                {
-                    Notify (\_PR.CPU3, 0x80)
-                }
-
-                If (And (PDC4, 0x08))
-                {
-                    Notify (\_PR.CPU4, 0x80)
-                }
-
-                If (And (PDC5, 0x08))
-                {
-                    Notify (\_PR.CPU5, 0x80)
-                }
-
-                If (And (PDC6, 0x08))
-                {
-                    Notify (\_PR.CPU6, 0x80)
-                }
-
-                If (And (PDC7, 0x08))
-                {
-                    Notify (\_PR.CPU7, 0x80)
-                }
-            }
-            Else
-            {
-                Notify (\_PR.CPU0, 0x80)
-            }
-        }
-
-        If (LGreater (TCNT, One))
-        {
-            If (LAnd (And (PDC0, 0x08), And (PDC0, 0x10)))
-            {
-                Notify (\_PR.CPU0, 0x81)
-            }
-
-            If (LAnd (And (PDC1, 0x08), And (PDC1, 0x10)))
-            {
-                Notify (\_PR.CPU1, 0x81)
-            }
-
-            If (LAnd (And (PDC2, 0x08), And (PDC2, 0x10)))
-            {
-                Notify (\_PR.CPU2, 0x81)
-            }
-
-            If (LAnd (And (PDC3, 0x08), And (PDC3, 0x10)))
-            {
-                Notify (\_PR.CPU3, 0x81)
-            }
-
-            If (LAnd (And (PDC4, 0x08), And (PDC4, 0x10)))
-            {
-                Notify (\_PR.CPU4, 0x81)
-            }
-
-            If (LAnd (And (PDC5, 0x08), And (PDC5, 0x10)))
-            {
-                Notify (\_PR.CPU5, 0x81)
-            }
-
-            If (LAnd (And (PDC6, 0x08), And (PDC6, 0x10)))
-            {
-                Notify (\_PR.CPU6, 0x81)
-            }
-
-            If (LAnd (And (PDC7, 0x08), And (PDC7, 0x10)))
-            {
-                Notify (\_PR.CPU7, 0x81)
-            }
-        }
-        Else
-        {
-            Notify (\_PR.CPU0, 0x81)
-        }
     }
 
     OperationRegion (MBAR, SystemMemory, Add (\_SB.PCI0.GMHB (), 0x5000), 0x1000)
@@ -11895,12 +11788,12 @@ DefinitionBlock ("iASL1TrjVv.aml", "DSDT", 2, "Apple ", "LH43STAR", 0x01072009)
                 Return (Zero)
             }
 
-            If (LNotEqual (\_SB.PCI0.LPCB.H_EC.LSTE, LIDS))
+            If (LNotEqual (\_SB.PCI0.LPCB.H_EC.LSTE, LIDS ()))
             {
                 Store (\_SB.PCI0.LPCB.H_EC.LSTE, LIDS)
                 If (IGDS)
                 {
-                    If (\_SB.PCI0.GFX0.GLID (LIDS))
+                    If (\_SB.PCI0.GFX0.GLID (LIDS ()))
                     {
                         Or (0x80000000, \_SB.PCI0.GFX0.CLID, \_SB.PCI0.GFX0.CLID)
                     }
@@ -11967,6 +11860,8 @@ DefinitionBlock ("iASL1TrjVv.aml", "DSDT", 2, "Apple ", "LH43STAR", 0x01072009)
             Name (_UID, Zero)
             Name (BUF0, ResourceTemplate ()
             {
+                IRQNoFlags ()
+                    {0,8,11,15}
                 Memory32Fixed (ReadWrite,
                     0xFED00000,         // Address Base
                     0x00000400,         // Address Length
@@ -12086,8 +11981,6 @@ DefinitionBlock ("iASL1TrjVv.aml", "DSDT", 2, "Apple ", "LH43STAR", 0x01072009)
                     0x01,               // Alignment
                     0x02,               // Length
                     )
-                IRQNoFlags ()
-                    {2}
             })
         }
 
@@ -12258,10 +12151,8 @@ DefinitionBlock ("iASL1TrjVv.aml", "DSDT", 2, "Apple ", "LH43STAR", 0x01072009)
                     0x0070,             // Range Minimum
                     0x0070,             // Range Maximum
                     0x01,               // Alignment
-                    0x08,               // Length
+                    0x02,               // Length
                     )
-                IRQNoFlags ()
-                    {8}
             })
         }
 
@@ -12282,8 +12173,6 @@ DefinitionBlock ("iASL1TrjVv.aml", "DSDT", 2, "Apple ", "LH43STAR", 0x01072009)
                     0x10,               // Alignment
                     0x04,               // Length
                     )
-                IRQNoFlags ()
-                    {0}
             })
         }
 
@@ -13219,12 +13108,12 @@ DefinitionBlock ("iASL1TrjVv.aml", "DSDT", 2, "Apple ", "LH43STAR", 0x01072009)
                 If (LAnd (LEqual (Arg0, 0x03), LEqual (Arg1, One)))
                 {
                     Store (One, ECON)
-                    If (LEqual (LIDS, Zero))
+                    If (LEqual (LIDS (), Zero))
                     {
                         Store (Zero, ^^^GFX0.CLID)
                     }
 
-                    If (LEqual (LIDS, One))
+                    If (LEqual (LIDS (), One))
                     {
                         Store (0x03, ^^^GFX0.CLID)
                     }
@@ -13354,7 +13243,7 @@ DefinitionBlock ("iASL1TrjVv.aml", "DSDT", 2, "Apple ", "LH43STAR", 0x01072009)
             Name (_HID, EisaId ("PNP0C0D"))
             Method (_LID, 0, NotSerialized)
             {
-                Return (LIDS)
+                Return (LIDS ())
             }
         }
 
@@ -13527,7 +13416,7 @@ DefinitionBlock ("iASL1TrjVv.aml", "DSDT", 2, "Apple ", "LH43STAR", 0x01072009)
                 Return (Zero)
             }
 
-            If (LEqual (LSTE, LIDS))
+            If (LEqual (LSTE, LIDS ()))
             {
                 Return (Zero)
             }
@@ -13537,7 +13426,7 @@ DefinitionBlock ("iASL1TrjVv.aml", "DSDT", 2, "Apple ", "LH43STAR", 0x01072009)
             {
                 If (LNotEqual (RELT, 0xDA))
                 {
-                    ^^^GFX0.GLID (LIDS)
+                    ^^^GFX0.GLID (LIDS ())
                 }
             }
 
@@ -13552,7 +13441,7 @@ DefinitionBlock ("iASL1TrjVv.aml", "DSDT", 2, "Apple ", "LH43STAR", 0x01072009)
                 Return (Zero)
             }
 
-            If (LEqual (LSTE, LIDS))
+            If (LEqual (LSTE, LIDS ()))
             {
                 Return (Zero)
             }
@@ -13562,7 +13451,7 @@ DefinitionBlock ("iASL1TrjVv.aml", "DSDT", 2, "Apple ", "LH43STAR", 0x01072009)
             {
                 If (LNotEqual (RELT, 0xDA))
                 {
-                    ^^^GFX0.GLID (LIDS)
+                    ^^^GFX0.GLID (LIDS ())
                 }
             }
 
@@ -13695,6 +13584,12 @@ DefinitionBlock ("iASL1TrjVv.aml", "DSDT", 2, "Apple ", "LH43STAR", 0x01072009)
 
                 Return (Local0)
             }
+
+            Name (_PRW, Package (0x02)
+            {
+                0x18, 
+                0x03
+            })
         }
     }
 
@@ -14104,9 +13999,9 @@ DefinitionBlock ("iASL1TrjVv.aml", "DSDT", 2, "Apple ", "LH43STAR", 0x01072009)
                     And (Local1, 0xFF00, Local1)
                     ShiftRight (Local0, 0x08, Local0)
                     Or (Local0, Local1, Local0)
-                    Store (Local0, B1B2)
-                    ^^PCI0.LPCB.H_EC.BPC0
-                    ^^PCI0.LPCB.H_EC.BPC1
+                    Store (Local0, B1B2(
+                    ^^PCI0.LPCB.H_EC.BPC0,
+                    ^^PCI0.LPCB.H_EC.BPC1))
                 }
             }
 
