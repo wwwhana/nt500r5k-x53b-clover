@@ -8,23 +8,35 @@ UEFI ver : P09RCY
 working list
 
 battery status(but not working Detect AC adaptor)
+
 backlight(with Fn key)
+
 HDMI AUDIO
+
 ALC282 AUDIO(AppleHDA PATCH NEED!)
+
 SPEED STEP
 
-not working
-wifi/BT(atheros qca6174) : no driver
-you need usb wifi/BT devive
-sdcard reader : not working on mac (also other laptop)
-sleep
-fan contorl
 
-bugs
+NOT WORKING
+
+wifi/BT(atheros qca6174) : NO DRIVER NEED USB WIFI/BT RECIVER
+
+sdcard reader : NO DRIVER
+
+sleep : NOT WORKING
+
+fan contorl : UNKNOWN(maybe working acpi table, but u can not control)
+
+BUGS
+
 sometime(almost ??) freez HD5500(restart GPU error)
+
 sometome delay
 
-HD5500 enable adress
+
+HD5500 enable guid
+
 http://www.firewolf.science/2015/04/guide-intel-hd-graphics-5500-on-os-x-yosemite-10-10-3/
 
 MUST USED SAME UEFI VERSION
