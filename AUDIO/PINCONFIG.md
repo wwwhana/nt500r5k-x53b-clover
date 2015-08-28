@@ -1,4 +1,4 @@
-dict>
+<dict>
 <key>AFGLowPowerState</key>
 <data>
 AwAAAA==
