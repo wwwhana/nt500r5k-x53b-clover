@@ -7,7 +7,7 @@ UEFI ver : P09RCY
 
 working list
 
-battery status(but not working Detect AC adaptor)
+battery status
 
 backlight(with Fn key)
 
