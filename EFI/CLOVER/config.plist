@@ -11,7 +11,7 @@
 			<key>DropOEM_DSM</key>
 			<false/>
 			<key>Name</key>
-			<string>DSDT-IGPU.aml</string>
+			<string>DSDT.aml</string>
 			<key>ReuseFFFF</key>
 			<false/>
 		</dict>
@@ -183,69 +183,49 @@
 				<key>Comment</key>
 				<string>AppleHDA - ALC282 (3 of 3)</string>
 				<key>Find</key>
-				<data>
-				hQjsEA==
-				</data>
+				<data>hQjsEA==</data>
 				<key>Name</key>
 				<string>AppleHDA</string>
 				<key>Replace</key>
-				<data>
-				AAAAAA==
-				</data>
+				<data>AAAAAA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>AppleHDA - ALC282 (1 of 3)</string>
 				<key>Find</key>
-				<data>
-				hBnUEQ==
-				</data>
+				<data>hBnUEQ==</data>
 				<key>Name</key>
 				<string>AppleHDA</string>
 				<key>Replace</key>
-				<data>
-				ggLsEA==
-				</data>
+				<data>ggLsEA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>10.10-BDW010509-Port_0x5-DP2HDM</string>
 				<key>Find</key>
-				<data>
-				AQUJAAAEAAAHBQAA
-				</data>
+				<data>AQUJAAAEAAAHBQAA</data>
 				<key>Name</key>
 				<string>AppleIntelBDWGraphicsFramebuffer</string>
 				<key>Replace</key>
-				<data>
-				AQUJAAAIAACCAAAA
-				</data>
+				<data>AQUJAAAIAACCAAAA</data>
 			</dict>
 			<dict>
 				<key>Find</key>
-				<data>
-				gxnUEQ==
-				</data>
+				<data>gxnUEQ==</data>
 				<key>Name</key>
 				<string>AppleHDA</string>
 				<key>Replace</key>
-				<data>
-				AAAAAA==
-				</data>
+				<data>AAAAAA==</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
 				<string>AppleHDA - ALC282 (2 of 3)</string>
 				<key>Find</key>
-				<data>
-				hAjsEA==
-				</data>
+				<data>hAjsEA==</data>
 				<key>Name</key>
 				<string>AppleHDA</string>
 				<key>Replace</key>
-				<data>
-				AAAAAA==
-				</data>
+				<data>AAAAAA==</data>
 			</dict>
 		</array>
 	</dict>
