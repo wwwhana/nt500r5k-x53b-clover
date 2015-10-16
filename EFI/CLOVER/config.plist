@@ -11,7 +11,7 @@
 			<key>DropOEM_DSM</key>
 			<false/>
 			<key>Name</key>
-			<string>DSDT.aml</string>
+			<string>DSDT-IGPU.aml</string>
 			<key>ReuseFFFF</key>
 			<false/>
 		</dict>
@@ -41,9 +41,9 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>slide=0 -gux_defer_usb2 kext-dev-mode=1 rootless=0</string>
+		<string>slide=0 nv_disable=1 kext-dev-mode=1 rootless=0</string>
 		<key>CustomLogo</key>
-		<string>Apple</string>
+		<false/>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -79,12 +79,10 @@
 		</dict>
 		<key>USB</key>
 		<dict>
-			<key>AddClockID</key>
-			<true/>
 			<key>FixOwnership</key>
-			<true/>
+			<false/>
 			<key>Inject</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>UseIntelHDMI</key>
 		<true/>
@@ -115,8 +113,8 @@
 		</dict>
 		<key>Hide</key>
 		<array>
-			<string>BOOTX64.EFI</string>
 			<string>SAMSUNG_REC</string>
+			<string>BOOTX64.EFI</string>
 		</array>
 		<key>Language</key>
 		<string>ko:0</string>
@@ -183,80 +181,10 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>10.10-BDW010509-Port_0x5-DP2HDM</string>
-				<key>Find</key>
-				<data>
-				AQUJAAAEAAAHBQAA
-				</data>
-				<key>Name</key>
-				<string>AppleIntelBDWGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				AQUJAAAIAACCAAAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Trim support</string>
-				<key>Find</key>
-				<data>
-				AEFQUExFIFNTRAA=
-				</data>
-				<key>Name</key>
-				<string>IOAHCIBlockStorage</string>
-				<key>Replace</key>
-				<data>
-				AAAAAAAAAAAAAAA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>configure HD5500</string>
-				<key>Find</key>
-				<data>
-				Oc92PA==
-				</data>
-				<key>Name</key>
-				<string>AppleIntelBDWGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				Oc93PA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Disable minStolenSize less or equal fStolenMemorySize assertion, 10.11.beta ( (based on Austere.J patch)</string>
-				<key>Find</key>
-				<data>
-				QTnEdj4=
-				</data>
-				<key>Name</key>
-				<string>AppleIntelBDWGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				QTnE6z4=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>AppleHDA - ALC282 (3 of 3)</string>
 				<key>Find</key>
 				<data>
 				hQjsEA==
-				</data>
-				<key>Name</key>
-				<string>AppleHDA</string>
-				<key>Replace</key>
-				<data>
-				AAAAAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>AppleHDA - ALC282 (2 of 3)</string>
-				<key>Find</key>
-				<data>
-				hAjsEA==
 				</data>
 				<key>Name</key>
 				<string>AppleHDA</string>
@@ -277,6 +205,46 @@
 				<key>Replace</key>
 				<data>
 				ggLsEA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.10-BDW010509-Port_0x5-DP2HDM</string>
+				<key>Find</key>
+				<data>
+				AQUJAAAEAAAHBQAA
+				</data>
+				<key>Name</key>
+				<string>AppleIntelBDWGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				AQUJAAAIAACCAAAA
+				</data>
+			</dict>
+			<dict>
+				<key>Find</key>
+				<data>
+				gxnUEQ==
+				</data>
+				<key>Name</key>
+				<string>AppleHDA</string>
+				<key>Replace</key>
+				<data>
+				AAAAAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>AppleHDA - ALC282 (2 of 3)</string>
+				<key>Find</key>
+				<data>
+				hAjsEA==
+				</data>
+				<key>Name</key>
+				<string>AppleHDA</string>
+				<key>Replace</key>
+				<data>
+				AAAAAA==
 				</data>
 			</dict>
 		</array>
@@ -339,21 +307,21 @@
 		<array>
 			<dict>
 				<key>Device</key>
-				<string>LAN</string>
-				<key>ID</key>
-				<integer>2171080940</integer>
-				<key>Name</key>
-				<string>RTL8168G</string>
-				<key>Type</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Device</key>
 				<string>WIFI</string>
 				<key>ID</key>
 				<integer>4069004</integer>
 				<key>Name</key>
 				<string>QCA6174</string>
+				<key>Type</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>Device</key>
+				<string>LAN</string>
+				<key>ID</key>
+				<integer>2171080940</integer>
+				<key>Name</key>
+				<string>RTL8168G</string>
 				<key>Type</key>
 				<integer>0</integer>
 			</dict>

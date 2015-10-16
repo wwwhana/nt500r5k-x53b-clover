@@ -1,32 +1,40 @@
-Samsung ativ book 5 nt500r5k-x53b
+<h1>Samsung ativ book 5 nt500r5k-x53b</h1>
 
-OS : yosemite 10.10.5
-UEFI ver : P09RCY
+minumum OS : yosemite 10.10.3<br />
+support : 10.10.3 ~ 10.11<br />
+UEFI ver : P09RCY<br />
 
 
 
-working list
+<h2>working list</h2>
 
-battery status(but not working Detect AC adaptor)
+battery status(if not working, clear EC)
 backlight(with Fn key)
 HDMI AUDIO
 ALC282 AUDIO(AppleHDA PATCH NEED!)
 SPEED STEP
+sleep
 
-not working
+<h2>not working</h2>
 wifi/BT(atheros qca6174) : no driver
 you need usb wifi/BT devive
 sdcard reader : not working on mac (also other laptop)
-sleep
 fan contorl
 
-bugs
-sometime(almost ??) freez HD5500(restart GPU error)
-sometome delay
+only el capitan:
+some usb port(internel port). but you can use this ports.
+like wifi/bt module etc,.
 
-HD5500 enable adress
+
+some bug fix how to
+
+clear ec :
+unplug and reconnect internal battery(need )
+
+HD5500 enable Guid
 http://www.firewolf.science/2015/04/guide-intel-hd-graphics-5500-on-os-x-yosemite-10-10-3/
 
 MUST USED SAME UEFI VERSION
 
-setup_var 0x142 0x3
+setup_var 0x142 0x4
+(need more memory el capitan 10.11)

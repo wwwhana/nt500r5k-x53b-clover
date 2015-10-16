@@ -11861,7 +11861,7 @@ DefinitionBlock ("iASLBhyNkq.aml", "DSDT", 2, "SECCSD", "LH43STAR", 0x01072009)
             Name (BUF0, ResourceTemplate ()
             {
                 IRQNoFlags ()
-                    {0,8,11,15}
+                    {2,8,11,15}
                 Memory32Fixed (ReadWrite,
                     0xFED00000,         // Address Base
                     0x00000400,         // Address Length

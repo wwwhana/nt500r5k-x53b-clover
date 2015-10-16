@@ -1,0 +1,144 @@
+63:510  0:240  Found BIOS RSDP at F0010
+63:510  0:000  Printing ACPI tables from RSDP F0010 ...
+63:510  0:000   F0010: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+63:510  0:000    (Xsdt: C5C05098, Rsdt: C5C05028)
+63:510  0:000    C5C05098: 'XSDT', 'LH43STAR', Rev: 1, Len: 172
+63:510  0:000    C5C05028: 'RSDT', 'LH43STAR', Rev: 1, Len: 104
+63:510  0:000    Tables in Xsdt: 17
+63:510  0:000    0. C5C11D68: 'FACP', 'LH43STAR', Rev: 5, Len: 268
+63:510  0:000        (Dsdt: C5C051D0, Facs: C6D0DF80, XDsdt: C5C051D0, XFacs: 0)
+63:510  0:000        C5C051D0: 'DSDT', 'LH43STAR', Rev: 2, Len: 52120
+63:511  0:000        C6D0DF80: 'FACS', Ver: 2, Len: 64
+63:511  0:000    1. C5C11E78: 'APIC', 'LH43STAR', Rev: 3, Len: 132
+63:511  0:000    2. C5C11F00: 'FPDT', 'LH43STAR', Rev: 1, Len: 68
+63:511  0:000    3. C5C11F48: 'FIDT', 'LH43STAR', Rev: 1, Len: 176
+63:511  0:000    4. C5C11FF8: 'MCFG', 'LH43STAR', Rev: 1, Len: 60
+63:511  0:000    5. C5C12038: 'HPET', 'LH43STAR', Rev: 1, Len: 56
+63:511  0:000    6. C5C12070: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+63:511  0:000    7. C5C12388: 'UEFI', '', Rev: 1, Len: 66
+63:511  0:000    8. C5C123D0: 'MSDM', 'LH43STAR', Rev: 3, Len: 85
+63:511  0:000    9. C5C12428: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1337
+63:511  0:000    10. C5C12968: 'SSDT', 'CpuSsdt', Rev: 2, Len: 2932
+63:511  0:000    11. C5C134E0: 'SSDT', 'CtdpB', Rev: 2, Len: 1086
+63:511  0:000    12. C5C13920: 'SSDT', 'SaSsdt ', Rev: 2, Len: 23905
+63:511  0:000    13. C5C19688: 'SSDT', 'SgPch', Rev: 2, Len: 1265
+63:511  0:000    14. C5C19B80: 'DMAR', 'BDW ', Rev: 1, Len: 168
+63:511  0:000    15. C5C19C28: 'SSDT', 'OptTabl', Rev: 1, Len: 5115
+63:511  0:000    16. C5C1B028: 'BGRT', 'LH43STAR', Rev: 0, Len: 56
+63:511  0:000    Tables in Rsdt: 17
+63:511  0:000    0. C5C05148: 'FACP', 'LH43STAR', Rev: 2, Len: 132
+63:511  0:000        (Dsdt: C5C051D0, Facs: C6D0DF40)
+63:511  0:000        C5C051D0: 'DSDT', 'LH43STAR', Rev: 2, Len: 52120
+63:511  0:000        C6D0DF40: 'FACS', Ver: 0, Len: 64
+63:511  0:000    1. C5C11E78: 'APIC', 'LH43STAR', Rev: 3, Len: 132
+63:511  0:000    2. C5C11F00: 'FPDT', 'LH43STAR', Rev: 1, Len: 68
+63:511  0:000    3. C5C11F48: 'FIDT', 'LH43STAR', Rev: 1, Len: 176
+63:511  0:000    4. C5C11FF8: 'MCFG', 'LH43STAR', Rev: 1, Len: 60
+63:511  0:000    5. C5C12038: 'HPET', 'LH43STAR', Rev: 1, Len: 56
+63:511  0:000    6. C5C12070: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+63:511  0:000    7. C5C12388: 'UEFI', '', Rev: 1, Len: 66
+63:511  0:000    8. C5C123D0: 'MSDM', 'LH43STAR', Rev: 3, Len: 85
+63:511  0:000    9. C5C12428: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1337
+63:511  0:000    10. C5C12968: 'SSDT', 'CpuSsdt', Rev: 2, Len: 2932
+63:511  0:000    11. C5C134E0: 'SSDT', 'CtdpB', Rev: 2, Len: 1086
+63:511  0:000    12. C5C13920: 'SSDT', 'SaSsdt ', Rev: 2, Len: 23905
+63:511  0:000    13. C5C19688: 'SSDT', 'SgPch', Rev: 2, Len: 1265
+63:511  0:000    14. C5C19B80: 'DMAR', 'BDW ', Rev: 1, Len: 168
+63:511  0:000    15. C5C19C28: 'SSDT', 'OptTabl', Rev: 1, Len: 5115
+63:511  0:000    16. C5C1B028: 'BGRT', 'LH43STAR', Rev: 0, Len: 56
+63:511  0:000  Found UEFI Acpi 2.0 RSDP at C5C05000
+63:511  0:000  Saving ACPI tables from RSDP C5C05000 to EFI\CLOVER\ACPI\origin ...
+63:511  0:000   C5C05000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+63:511  0:000    (Xsdt: C5C05098, Rsdt: C5C05028)
+63:511  0:000    C5C05098: 'XSDT', 'LH43STAR', Rev: 1, Len: 172
+63:511  0:000    C5C05028: 'RSDT', 'LH43STAR', Rev: 1, Len: 104
+63:511  0:000    Tables in Xsdt: 17
+63:511  0:000    0. C5C11D68: 'FACP', 'LH43STAR', Rev: 5, Len: 268
+63:511  0:000        (Dsdt: C5C051D0, Facs: C6D0DF80, XDsdt: C5C051D0, XFacs: 0)
+63:511  0:000        C5C051D0: 'DSDT', 'LH43STAR', Rev: 2, Len: 52120
+63:512  0:000        C6D0DF80: 'FACS', Ver: 2, Len: 64
+63:512  0:000    1. C5C11E78: 'APIC', 'LH43STAR', Rev: 3, Len: 132
+63:512  0:000    2. C5C11F00: 'FPDT', 'LH43STAR', Rev: 1, Len: 68
+63:512  0:000    3. C5C11F48: 'FIDT', 'LH43STAR', Rev: 1, Len: 176
+63:512  0:000    4. C5C11FF8: 'MCFG', 'LH43STAR', Rev: 1, Len: 60
+63:512  0:000    5. C5C12038: 'HPET', 'LH43STAR', Rev: 1, Len: 56
+63:512  0:000    6. C5C12070: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+63:512  0:000    7. C5C12388: 'UEFI', '', Rev: 1, Len: 66
+63:512  0:000    8. C5C123D0: 'MSDM', 'LH43STAR', Rev: 3, Len: 85
+63:512  0:000    9. C5C12428: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1337
+63:512  0:000    10. C5C12968: 'SSDT', 'CpuSsdt', Rev: 2, Len: 2932
+63:512  0:000    11. C5C134E0: 'SSDT', 'CtdpB', Rev: 2, Len: 1086
+63:512  0:000    12. C5C13920: 'SSDT', 'SaSsdt ', Rev: 2, Len: 23905
+63:512  0:000    13. C5C19688: 'SSDT', 'SgPch', Rev: 2, Len: 1265
+63:512  0:000    14. C5C19B80: 'DMAR', 'BDW ', Rev: 1, Len: 168
+63:512  0:000    15. C5C19C28: 'SSDT', 'OptTabl', Rev: 1, Len: 5115
+63:512  0:000    16. C5C1B028: 'BGRT', 'LH43STAR', Rev: 0, Len: 56
+63:512  0:000    Tables in Rsdt: 17
+63:512  0:000    0. C5C05148: 'FACP', 'LH43STAR', Rev: 2, Len: 132
+63:512  0:000        (Dsdt: C5C051D0, Facs: C6D0DF40)
+63:512  0:000        C5C051D0: 'DSDT', 'LH43STAR', Rev: 2, Len: 52120
+63:513  0:000        C6D0DF40: 'FACS', Ver: 0, Len: 64
+63:513  0:000    1. C5C11E78: 'APIC', 'LH43STAR', Rev: 3, Len: 132
+63:513  0:000    2. C5C11F00: 'FPDT', 'LH43STAR', Rev: 1, Len: 68
+63:513  0:000    3. C5C11F48: 'FIDT', 'LH43STAR', Rev: 1, Len: 176
+63:513  0:000    4. C5C11FF8: 'MCFG', 'LH43STAR', Rev: 1, Len: 60
+63:513  0:000    5. C5C12038: 'HPET', 'LH43STAR', Rev: 1, Len: 56
+63:513  0:000    6. C5C12070: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+63:513  0:000    7. C5C12388: 'UEFI', '', Rev: 1, Len: 66
+63:513  0:000    8. C5C123D0: 'MSDM', 'LH43STAR', Rev: 3, Len: 85
+63:513  0:000    9. C5C12428: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1337
+63:513  0:000    10. C5C12968: 'SSDT', 'CpuSsdt', Rev: 2, Len: 2932
+63:513  0:000    11. C5C134E0: 'SSDT', 'CtdpB', Rev: 2, Len: 1086
+63:513  0:000    12. C5C13920: 'SSDT', 'SaSsdt ', Rev: 2, Len: 23905
+63:513  0:000    13. C5C19688: 'SSDT', 'SgPch', Rev: 2, Len: 1265
+63:513  0:000    14. C5C19B80: 'DMAR', 'BDW ', Rev: 1, Len: 168
+63:513  0:000    15. C5C19C28: 'SSDT', 'OptTabl', Rev: 1, Len: 5115
+63:513  0:000    16. C5C1B028: 'BGRT', 'LH43STAR', Rev: 0, Len: 56
+63:513  0:000  Found UEFI Acpi 1.0 RSDP at C5C05000
+63:513  0:000  Printing ACPI tables from RSDP C5C05000 ...
+63:513  0:000   C5C05000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+63:513  0:000    (Xsdt: C5C05098, Rsdt: C5C05028)
+63:513  0:000    C5C05098: 'XSDT', 'LH43STAR', Rev: 1, Len: 172
+63:513  0:000    C5C05028: 'RSDT', 'LH43STAR', Rev: 1, Len: 104
+63:513  0:000    Tables in Xsdt: 17
+63:513  0:000    0. C5C11D68: 'FACP', 'LH43STAR', Rev: 5, Len: 268
+63:513  0:000        (Dsdt: C5C051D0, Facs: C6D0DF80, XDsdt: C5C051D0, XFacs: 0)
+63:513  0:000        C5C051D0: 'DSDT', 'LH43STAR', Rev: 2, Len: 52120
+63:514  0:000        C6D0DF80: 'FACS', Ver: 2, Len: 64
+63:514  0:000    1. C5C11E78: 'APIC', 'LH43STAR', Rev: 3, Len: 132
+63:514  0:000    2. C5C11F00: 'FPDT', 'LH43STAR', Rev: 1, Len: 68
+63:514  0:000    3. C5C11F48: 'FIDT', 'LH43STAR', Rev: 1, Len: 176
+63:514  0:000    4. C5C11FF8: 'MCFG', 'LH43STAR', Rev: 1, Len: 60
+63:514  0:000    5. C5C12038: 'HPET', 'LH43STAR', Rev: 1, Len: 56
+63:514  0:000    6. C5C12070: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+63:514  0:000    7. C5C12388: 'UEFI', '', Rev: 1, Len: 66
+63:514  0:000    8. C5C123D0: 'MSDM', 'LH43STAR', Rev: 3, Len: 85
+63:514  0:000    9. C5C12428: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1337
+63:514  0:000    10. C5C12968: 'SSDT', 'CpuSsdt', Rev: 2, Len: 2932
+63:514  0:000    11. C5C134E0: 'SSDT', 'CtdpB', Rev: 2, Len: 1086
+63:514  0:000    12. C5C13920: 'SSDT', 'SaSsdt ', Rev: 2, Len: 23905
+63:514  0:000    13. C5C19688: 'SSDT', 'SgPch', Rev: 2, Len: 1265
+63:514  0:000    14. C5C19B80: 'DMAR', 'BDW ', Rev: 1, Len: 168
+63:514  0:000    15. C5C19C28: 'SSDT', 'OptTabl', Rev: 1, Len: 5115
+63:514  0:000    16. C5C1B028: 'BGRT', 'LH43STAR', Rev: 0, Len: 56
+63:514  0:000    Tables in Rsdt: 17
+63:514  0:000    0. C5C05148: 'FACP', 'LH43STAR', Rev: 2, Len: 132
+63:514  0:000        (Dsdt: C5C051D0, Facs: C6D0DF40)
+63:514  0:000        C5C051D0: 'DSDT', 'LH43STAR', Rev: 2, Len: 52120
+63:515  0:000        C6D0DF40: 'FACS', Ver: 0, Len: 64
+63:515  0:000    1. C5C11E78: 'APIC', 'LH43STAR', Rev: 3, Len: 132
+63:515  0:000    2. C5C11F00: 'FPDT', 'LH43STAR', Rev: 1, Len: 68
+63:515  0:000    3. C5C11F48: 'FIDT', 'LH43STAR', Rev: 1, Len: 176
+63:515  0:000    4. C5C11FF8: 'MCFG', 'LH43STAR', Rev: 1, Len: 60
+63:515  0:000    5. C5C12038: 'HPET', 'LH43STAR', Rev: 1, Len: 56
+63:515  0:000    6. C5C12070: 'SSDT', 'SataTabl', Rev: 1, Len: 789
+63:515  0:000    7. C5C12388: 'UEFI', '', Rev: 1, Len: 66
+63:515  0:000    8. C5C123D0: 'MSDM', 'LH43STAR', Rev: 3, Len: 85
+63:515  0:000    9. C5C12428: 'SSDT', 'Cpu0Ist', Rev: 2, Len: 1337
+63:515  0:000    10. C5C12968: 'SSDT', 'CpuSsdt', Rev: 2, Len: 2932
+63:515  0:000    11. C5C134E0: 'SSDT', 'CtdpB', Rev: 2, Len: 1086
+63:515  0:000    12. C5C13920: 'SSDT', 'SaSsdt ', Rev: 2, Len: 23905
+63:515  0:000    13. C5C19688: 'SSDT', 'SgPch', Rev: 2, Len: 1265
+63:515  0:000    14. C5C19B80: 'DMAR', 'BDW ', Rev: 1, Len: 168
+63:515  0:000    15. C5C19C28: 'SSDT', 'OptTabl', Rev: 1, Len: 5115
+63:515  0:000    16. C5C1B028: 'BGRT', 'LH43STAR', Rev: 0, Len: 56
