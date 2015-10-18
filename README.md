@@ -7,34 +7,38 @@ UEFI ver : P09RCY<br />
 
 
 <h2>working list</h2>
-
+<pre>
 battery status(if not working, clear EC)
 backlight(with Fn key)
 HDMI AUDIO
 ALC282 AUDIO(AppleHDA PATCH NEED!)
 SPEED STEP
-sleep(usb wake bug, working)
+sleep(working)
+</pre>
 
 <h2>not working</h2>
+<pre>
 wifi/BT(atheros qca6174) : no driver
 you need usb wifi/BT devive
-sdcard reader : not working on mac (also other laptop)
+sdcard reader : no driver
 fan contorl
+</pre>
 
+<pre>
 only el capitan:
 some usb port(internel port). but you can use this ports.
 like wifi/bt module etc,.
-
+</pre>
 
 some bug fix how to
 
-clear ec :
+<h3>clear ec</h3>
 unplug and reconnect internal battery(need )
 
-HD5500 enable Guid
+<h3>HD5500 enable Guid</h3>
 http://www.firewolf.science/2015/04/guide-intel-hd-graphics-5500-on-os-x-yosemite-10-10-3/
 
 MUST USED SAME UEFI VERSION
 
-setup_var 0x142 0x4
+<h1>setup_var 0x142 0x4</h1>
 (need more memory el capitan 10.11)
