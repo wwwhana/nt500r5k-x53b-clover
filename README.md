@@ -13,7 +13,7 @@ backlight(with Fn key)
 HDMI AUDIO
 ALC282 AUDIO(AppleHDA PATCH NEED!)
 SPEED STEP
-sleep
+sleep(usb wake bug, working)
 
 <h2>not working</h2>
 wifi/BT(atheros qca6174) : no driver
