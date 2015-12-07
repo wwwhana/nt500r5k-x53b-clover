@@ -38,6 +38,11 @@ unplug and reconnect internal battery(need )
 <h3>HD5500 enable Guid</h3>
 http://www.firewolf.science/2015/04/guide-intel-hd-graphics-5500-on-os-x-yosemite-10-10-3/
 
+thank FireWolf
+please follow this step
+STEP 2.2: Using EFI Shell to change DVMT settings in BIOS.
+
+
 MUST USED SAME UEFI VERSION
 
 <h1>setup_var 0x142 0x4</h1>
